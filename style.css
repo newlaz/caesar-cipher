@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400;600;700&display=swap');
+
+:root {
+    --color-terminal: #100720;
+    --borde-redondo: 4px;
+    --light-color: #000000;
+    --white: #ffffff;
+    --verde: #5af78d;
+}
+
+* {
+    font-family: 'Source Code Pro', monospace;
+}
+
+body {
+    /* Altura de body = total altura de la pantalla */
+    height: 100vh;
+
+    /* Centrando todo el contenido del body */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--light-color);
+    color: var(--white);
+}
+
+
+/* Quitando estilos predifinos del input y botones */
+input,
+button {
+    border: none;
+    outline: none;
+}
+
+main {
+    padding: 25px;
+    border-radius: var(--borde-redondo);
+}
+
+h1 {
+    margin: 0;
+}
+
+#input-original,
+#resultado {
+    background-color: var(--color-terminal);
+    width: -webkit-fill-available;
+}
+
+#input-original {
+    margin: 10px 0 0;
+    padding: 10px;
+    color: var(--white);
+    border-top-left-radius: var(--borde-redondo);
+    border-top-right-radius: var(--borde-redondo);
+}
+
+#resultado {
+    height: 20px;
+    color: var(--verde);
+    padding: 0 10px 10px;
+    border-bottom-left-radius: var(--borde-redondo);
+    border-bottom-right-radius: var(--borde-redondo);
+}
+
+.rango {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 30px;
+    text-align: center;
+    align-items: center;
+}
+
+input[type='range'] {
+    -webkit-appearance: none;
+    border-radius: var(--borde-redondo);
+    background: var(--color-terminal);
+    margin: 0;
+    padding: 0 5px;
+    height: 20px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    cursor: pointer;
+    -webkit-appearance: none;
+    background: var(--white);
+    border-radius: var(--borde-redondo);
+    height: 10px;
+    width: 10px;
+}

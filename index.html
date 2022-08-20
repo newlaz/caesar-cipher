@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar Chiper</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="app.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+    <main>
+        <h1>Caesar Chiper.</h1>
+        <form autocomplete="off" id="cifrador">
+            <input type="text" id="input-original" name="text" placeholder="Your text here!" spellcheck="false">
+        </form>
+        <div id="resultado"></div>
+        <div class="rango">
+            <input type="range" value="10" min="1" max="20" id="rango"
+                oninput="this.nextElementSibling.value = this.value">
+            <output>10</output>
+        </div>
+    </main>
+</body>
+
+</html>
